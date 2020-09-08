@@ -1,0 +1,12 @@
+pkgurl='https://github.com/jitsi/jitsi-meet-electron/releases'
+pkgmod='appimage'
+
+sedreg='.*href="(.*AppImage).*'
+sedrep='https://github.com\1'
+sedver='.*download/v(.*)/.*'
+
+icon_app_name='Jitsi Meet'
+icon_app_comment='Jitsi Meet desktop client'
+icon_exec='/opt/AppImage/jitsi-meet.appimage'
+icon_cats='Network;Qt;'
+icon_extras='StartupWMClass=JitsiMeetDesktop'

@@ -1,0 +1,7 @@
+pkgurl='https://www.realvnc.com/en/connect/download/viewer/linux/'
+pkgmod='deb'
+
+sedreg_x86_64='.*href="(.*Linux-x64\.deb).*'
+sedreg_x86='.*href="(.*Linux-x86\.deb).*'
+sedrep='https://www.realvnc.com\1'
+sedver='.*VNC-Viewer-(.*)-Linux.*'

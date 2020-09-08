@@ -1,0 +1,17 @@
+pkgurl='https://github.com/telegramdesktop/tdesktop/releases'
+pkgmod='tar'
+module_args='xJf'
+module_pkg_install='/opt'
+module_pkg_dir='/opt/Telegram'
+
+icon_app_name='Telegram Desktop'
+icon_app_comment='Official desktop client for Telegram'
+icon_exec='/opt/Telegram/Telegram'
+icon_cats='Network;InstantMessaging;Qt;'
+icon_extras='StartupWMClass=TelegramDesktop
+MimeType=x-scheme-handler/tg;'
+
+sedreg_x86_64='.*href="(.*tsetup\..*tar\.xz)".*'
+sedreg_x86='.*href="(.*tsetup32\..*tar\.xz)".*'
+sedrep='https://github.com\1'
+sedver='.*download/v(.*)/.*'

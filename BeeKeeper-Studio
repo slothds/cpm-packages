@@ -1,0 +1,15 @@
+pkgurl='https://github.com/beekeeper-studio/beekeeper-studio/releases'
+pkgmod='appimage'
+
+sedreg='.*href="(.*AppImage).*'
+sedrep='https://github.com\1'
+sedver='.*download/v(.*)/.*'
+
+# module_args='ail-enabled'
+
+icon_app_name='BeeKeeper Studio'
+icon_app_comment='BeeKeeper Studio Open-Source SQL Editor'
+icon_exec='/opt/AppImage/BeeKeeper-Studio.appimage'
+icon_cats='Development;'
+icon_extras='StartupWMClass=Beekeeper Studio'
+icon_file_link='https://raw.githubusercontent.com/beekeeper-studio/beekeeper-studio/master/src/assets/logo.svg'

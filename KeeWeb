@@ -1,0 +1,6 @@
+pkgurl='https://github.com/keeweb/keeweb/releases'
+pkgmod='deb'
+
+sedreg_x86_64='.*href="(.*\.linux\.x64\.deb).*'
+sedrep='https://github.com\1'
+sedver='.*download/v(.*)/.*'
