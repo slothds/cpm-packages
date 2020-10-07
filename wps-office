@@ -1,0 +1,8 @@
+pkgurl='https://linux.wps.com/js/meta.js'
+pkgmod='deb'
+
+sedreg='.*download_link_deb[[:space:]]*=[[:space:]]*"(.*\.deb)";'
+sedrep='\1'
+
+verurl='https://linux.wps.com/js/meta.js'
+sedver='.*version[[:space:]]*=[[:space:]]*"(.*)";'
